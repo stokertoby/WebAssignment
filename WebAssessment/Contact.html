@@ -1,0 +1,82 @@
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+			<link href="styles/contact.css" rel="stylesheet">
+			<meta charset="utf-8">
+			<title>Contact</title> 
+		</head>
+		<body>
+
+			<button id="NameChange">Change Name</button>
+			<p id="NameUser"> Welcome User</p>
+
+			<style>
+			ul {
+  			list-style-type: none;
+  			margin: 0;
+  			padding: 0;
+  			overflow: hidden;
+  			background-color: #000*;
+			}
+
+			li {
+  			float: left;
+			}
+
+			li a {
+  			display: inline-block;
+  			color: black;
+  			text-align: center;
+ 			padding: 14px 49px;
+  			text-decoration: none;
+			}
+
+			li a:hover {
+  			background-color: #1111;
+			}
+
+			</style>
+			</head>
+
+		<nav>
+			<ul id="PageLinks">
+  			<li class="listLinks"><a href="HomeMain.html">Home</a></li>
+  			<li class="listLinks"><a href="About.html">About Us</a></li>
+  			<li class="listLinks"><a href="Contact.html">Contact</a></li>
+			<li class="listLinks"><a href="links.html">Useful Links</a></li>
+			<li class="listLinks"><a href="https://validator.w3.org/nu/">HTML Validator</a></li>
+			<li class="listLinks"><a href="Activities.html">Activities</a></li>
+		</ul>
+		</nav>
+
+			<div class="container">
+  			<form action="action_page.php">
+
+    		<label for="fname">First Name</label>
+   			<input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    		<label for="lname">Last Name</label>
+    		<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+   			<label for="country">Country</label>
+   			<select id="country" name="country">
+      		<option value="unitedkingdom">United Kingdom</option>
+    		</select>
+
+    		<label for="subject">Subject</label>
+    		<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    		<button onclick="myFunction()">Submit</button>
+    		<script>
+    			function myFunction(){
+    				alert("Your feedback has been sent to the Team");
+    			}
+    		</script>
+  		</form>
+		</div>
+
+
+			<script src="scripts/main.js"></script>
+		</body>
+	</html>
